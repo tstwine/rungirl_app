@@ -1,0 +1,7 @@
+<p><%= link_to "Distances", distances_path %> / <%= @distance.time %></p>  
+ <h1><%= @distance.time %></h1>
+ <h2><%=@distance.date %></h2>
+ <p><%= link_to 'Edit', edit_distance_path(@distance) %></p>
+ <%= form_for @distance, :method => :delete do |f| %>
+  <%= f.submit 'Destroy' %> 
+<% end %>

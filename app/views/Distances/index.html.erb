@@ -1,0 +1,9 @@
+<h1>Distances</h1>
+
+ <ul>
+ <% @distances.each do |distance| %>
+   <li><%= link_to "Date: #{distance.date}, Time: #{distance.time}", distance_path(distance) %></li>
+ <% end %>
+ </ul>
+
+ <%= link_to 'Add a Distance', new_distance_path %>
